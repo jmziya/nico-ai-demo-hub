@@ -468,7 +468,7 @@ Show me your plan first and wait for my approval. Do not email or share anything
   <header class="dhead">
     <div class="dnum">Demo 5 · Copilot Chat</div>
     <h2>Due Diligence Across Three Documents</h2>
-    <div class="dmeta"><span>9 min</span><span>Copilot Chat (work) with several files uploaded</span><span>Output: sourced findings register, covenant impact, management questions, draft email</span></div>
+    <div class="dmeta"><span>9 min</span><span>Copilot Chat (work) with several files uploaded</span><span>Output: sourced findings register, covenant impact, management questions, draft email, Excel register</span></div>
   </header>
   <p class="goal">Upload three Kalulu documents at once and make Copilot find the contradictions, quoting the sentence that proves each one.</p>
   <div class="datacheck"><b>Data check</b><span>Data room documents are client confidential and usually covered by an NDA. Use Copilot Chat on your work account with the green shield, or Cowork on the deal's SharePoint site. Never upload a data room to NotebookLM, ChatGPT or Claude on a personal account.</span></div>
@@ -478,7 +478,7 @@ Show me your plan first and wait for my approval. Do not email or share anything
     <li>Download the three Kalulu files.</li>
     <li>Start a <b>new chat</b>. Check the green shield and turn web search off.</li>
     <li>Click <b>+ › Upload from this device</b> and select all three files, or drag them into the chat box. Wait until all three show as attached.</li>
-    <li>Paste Prompt 1. Then run the follow-ups in the same chat.</li>
+    <li>Paste Prompt 1. Then run the follow-ups in the same chat. Follow-up 5 gives you the register as an Excel file.</li>
   </ol>
   <div class="pblock">
   <div class="pbar"><span class="plabel">Prompt 1 · Findings register</span><span class="pnote">Attach all three files first</span>
@@ -506,6 +506,14 @@ Then list the additional documents we must request before signing a term sheet.<
   <div class="pbar"><span class="plabel">Follow-up 4 · Draft the email (you send it, not Copilot)</span>
   <button class="copy" type="button" data-target="p5d">Copy</button></div>
   <pre id="p5d" tabindex="0">Draft a polite but firm email to Kalulu's Finance Director requesting these documents within five working days. Keep it under 200 words. Do not mention our internal severity ratings or the covenant calculation.</pre></div>
+  <div class="pblock">
+  <div class="pbar"><span class="plabel">Follow-up 5 · Take the register away as an Excel file</span><span class="pnote">Group A's file for this demo</span>
+  <button class="copy" type="button" data-target="p5e">Copy</button></div>
+  <pre id="p5e" tabindex="0">Create an Excel workbook I can download, called "Kalulu DD - Findings register - DRAFT", with two sheets:
+1. Findings: No. | Finding | What each document says | Exact source sentence | Source file | Potential MWK impact | Severity (leave this column blank for me to fill in).
+2. Questions: Priority | Question | Linked finding no. | Document requested.
+
+Use only the findings and questions from this chat. Do not add new ones.</pre></div>
   <p class="hint">Copy the email into Outlook, read it and send it yourself. <b>Can't upload files?</b> Copy each document from the boxes below and paste all three into one message, each starting with its name.</p>
   <details class="docs"><summary>Show the three documents as text</summary>
   <div class="pblock">
@@ -575,7 +583,7 @@ Save the files in the same folder. Show me your plan first and wait for my appro
     <p class="hint"><b>Watch for:</b> the email must stay in Drafts, and every finding must have a source sentence you can find in the file.</p>
   </div>
   <div class="checks">
-    <div><h3>Before you trust it</h3><ul><li>Open the source file and find each quoted sentence</li><li>Check that the AI found at least five of the six planted issues</li><li>Severity is your decision, not the AI's</li></ul></div>
+    <div><h3>Before you trust it</h3><ul><li>Open the source file and find each quoted sentence</li><li>Check that the AI found at least five of the six planted issues</li><li>Severity is your decision, not the AI's. The Excel register leaves that column blank for you.</li></ul></div>
     <details><summary>Check your result</summary><ul><li>Revenue mismatch: the presentation says MWK 26.1bn (+18%); the audited accounts say MWK 25.3bn (+14.5%).</li><li>Customer concentration: the presentation says no customer is above 10%; the board minutes say Southern Commodities is about 17% of sales.</li><li>Credit quality: MWK 900m from one customer is more than 120 days overdue, with no impairment. The presentation claims 30-day terms.</li><li>Undisclosed tax dispute: a MWK 420m VAT assessment (50% chance of an adverse outcome), against "no material tax dispute" and "contingent liabilities: none".</li><li>Covenant pressure: a 50% impairment of the MWK 900m (MWK 450m) cuts EBIT to MWK 2,300m, so interest cover falls to 2,300 / 1,350 = 1.70x. That is a breach. The presentation claims comfortable headroom.</li><li>Related-party risk: MWK 2.1bn of purchases from a director's company without a competitive tender.</li></ul></details>
   </div>
 </section><section class="demo" id="demo6">
@@ -733,7 +741,7 @@ Flag any figure you could not verify. Show me your plan first.</pre>
   <header class="dhead">
     <div class="dnum">Demo 8 · Copilot Chat, then Cowork</div>
     <h2>Run the Pipeline Meeting with Copilot</h2>
-    <div class="dmeta"><span>9 min</span><span>Copilot Chat (work) with a CSV upload, then Copilot Cowork</span><span>Output: weighted fee forecast, officer action lists, Teams drafts, Monday meeting pack</span></div>
+    <div class="dmeta"><span>9 min</span><span>Copilot Chat (work) with a CSV upload, then Copilot Cowork</span><span>Output: weighted fee forecast, officer action lists, Teams drafts, Excel pipeline file, Monday meeting pack</span></div>
   </header>
   <p class="goal">Upload the deal register, weight the fees by probability, and prepare each officer's actions. Then see how Cowork puts the whole Monday pack together.</p>
   <div class="datacheck"><b>Data check</b><span>A real deal register is among NICO's most sensitive commercial files, with client names, fees and stages. Use Copilot Chat on your work account or Cowork only. Keep the register in a SharePoint site that only the deal team can open, because Cowork can read anything you can read.</span></div>
@@ -744,7 +752,7 @@ Flag any figure you could not verify. Show me your plan first.</pre>
     <li>Download the deal register CSV, or use the Demo8_Pipeline sheet in the data pack.</li>
     <li>Start a new Copilot Chat. Check the shield, turn web search <b>off</b>, and upload the file.</li>
     <li>Paste Prompt 1 and <b>check that the totals match</b> before you continue: 12 deals, MWK 149,000m, MWK 2,405m.</li>
-    <li>Run follow-ups 2 and 3. Paste each Teams message yourself.</li>
+    <li>Run follow-ups 2 and 3. Paste each Teams message yourself. Follow-up 4 gives you the pipeline as an Excel file.</li>
   </ol>
   <div class="pblock">
   <div class="pbar"><span class="plabel">Prompt 1 · Weighted pipeline</span><span class="pnote">Attach the CSV first</span>
@@ -767,6 +775,15 @@ FORMAT: Tables.</pre></div>
   <pre id="p8c" tabindex="0">For each lead officer, write:
 - an action list for this week (no more than five bullets) covering only their own deals
 - a short, friendly Teams message I can paste to them. Do not mention other officers' deals or fees.</pre></div>
+  <div class="pblock">
+  <div class="pbar"><span class="plabel">Follow-up 4 · Take the pipeline away as an Excel file</span><span class="pnote">Group A's file for this demo</span>
+  <button class="copy" type="button" data-target="p8d">Copy</button></div>
+  <pre id="p8d" tabindex="0">Create an Excel workbook I can download, called "Pipeline - Weighted forecast - DRAFT", with three sheets:
+1. Register: all 12 deals with a Probability column and a Weighted fee column (expected fee x probability).
+2. Summary: totals by stage and by lead officer, with the share of weighted fees for each officer.
+3. Needs attention: the three deals you named, with the reason and a blank Owner column.
+
+Put the totals at the top of Register: number of deals, total value, total expected fees and total weighted fees. Use only the uploaded register.</pre></div>
   <p class="hint"><b>Want automation as well?</b> Ask: <i>"Design a Power Automate flow: when a proposal arrives by email, extract client, sector, value and deadline, add a row to this register and notify the lead officer in Teams. List the trigger and each action."</i> Then paste it into <b>Power Automate › Describe it to design it</b>. Test it with dummy emails only.</p>
   <div class="licence">
     <div class="cwhead"><span class="cwtag">Copilot licence version · Group B</span><span class="pnote">Uses one Analyst run. Web search off.</span><button class="copy" type="button" data-target="a8">Copy</button></div>
@@ -796,7 +813,7 @@ Show me the plan first, and stop for my approval before any step that changes my
     <p class="hint"><b>Discuss:</b> On the real register, step 2 is where Cowork saves the most time. It is also why the register's access permissions matter.</p>
   </div>
   <div class="checks">
-    <div><h3>Before you trust it</h3><ul><li>Totals must match: 12 deals, MWK 149,000m value, MWK 2,405m fees</li><li>The stage probabilities are management's assumption; agree them before use</li><li>Each officer's message must contain only their own deals</li></ul></div>
+    <div><h3>Before you trust it</h3><ul><li>Totals must match, in the chat and in the Excel file: 12 deals, MWK 149,000m value, MWK 2,405m fees, about MWK 1,211m weighted</li><li>The stage probabilities are management's assumption; agree them before use</li><li>Each officer's message must contain only their own deals</li></ul></div>
     <details><summary>Check your result</summary><ul><li>Probability-weighted fees: about MWK 1,211m of the MWK 2,405m expected</li><li>High-risk deals carry MWK 1,560m of fees</li><li>L. Phiri carries MWK 1,405m (58%) of expected fees, including both large project finance deals. That is an officer concentration risk.</li></ul></details>
   </div>
 </section>
