@@ -1,0 +1,13 @@
+Deal ID,Client (fictional),Sector,Transaction type,Stage,Transaction value (MWK m),Expected fee (MWK m),Expected close,Lead officer,Completion risk
+NC-101,Kalulu Agro-Processing,Agribusiness,Corporate bond,Mandate secured,6000,120,2027-03,T. Banda,Medium
+NC-102,Chikwawa Solar IPP,Energy,Project finance,Active - financial close,50000,750,2027-06,L. Phiri,High
+NC-103,Lilongwe Mall Holdings,Real estate,Long-term loan,Proposal submitted,12000,180,2027-02,T. Banda,Medium
+NC-104,Shire Logistics,Transport,Commercial paper,Active - investor roadshow,2500,40,2026-12,M. Kumwenda,Low
+NC-105,Mzuzu Coffee Growers,Agribusiness,Private equity placement,New lead,4000,100,2027-05,L. Phiri,High
+NC-106,Zomba Health Partners,Healthcare,PPP advisory,Proposal submitted,18000,270,2027-08,M. Kumwenda,High
+NC-107,Nkhata Bay Fisheries,Agribusiness,Acquisition (buy-side),Active - due diligence,3200,64,2027-01,T. Banda,Medium
+NC-108,Blantyre Water Services,Utilities,Infrastructure bond,New lead,15000,225,2027-09,L. Phiri,Medium
+NC-109,Kasungu Tobacco Exporters,Agribusiness,Restructuring,Active - negotiations,5500,110,2026-12,M. Kumwenda,High
+NC-110,Mangochi Resort Group,Tourism,Rights issue,Mandate secured,3000,60,2027-04,T. Banda,Low
+NC-111,Dedza Cement Works,Manufacturing,Project finance,New lead,22000,330,2027-11,L. Phiri,High
+NC-112,Karonga Telecom Towers,Telecoms,Sale of company (sell-side),Closed - won,7800,156,2026-10,M. Kumwenda,Low
