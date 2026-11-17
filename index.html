@@ -111,6 +111,23 @@ ol.steps a { color:var(--blue) }
 .cwhead { display:flex; align-items:center; gap:10px; flex-wrap:wrap }
 .cwtag { font:500 12px var(--mono); letter-spacing:.12em; text-transform:uppercase; color:var(--gold) }
 .cowork pre { border:1px solid var(--line); max-height:420px }
+.groups { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:12px }
+.groups > div { border:1px solid var(--line); background:var(--bg); padding:14px; display:grid; gap:6px; align-content:start; font-size:14.5px }
+.groups p { margin:0 }
+.gtag { font:500 12px var(--mono); letter-spacing:.12em; text-transform:uppercase }
+.groups .gA { border-top:4px solid var(--blue) } .gA .gtag { color:var(--blue) }
+.groups .gB { border-top:4px solid var(--green) } .gB .gtag { color:var(--green) }
+.groups .gC { border-top:4px solid var(--gold) } .gC .gtag { color:var(--gold) }
+.yourgroup { display:flex; flex-wrap:wrap; gap:8px; font-size:14px; align-items:baseline }
+.yourgroup > b { font-size:12px; letter-spacing:.1em; text-transform:uppercase; color:var(--muted) }
+.yourgroup span { border:1px solid var(--line); padding:3px 10px; background:var(--bg) }
+.yourgroup .ya b { color:var(--blue) } .yourgroup .yb b { color:var(--green) } .yourgroup .yc b { color:var(--gold) }
+.licence { border:1.5px solid var(--green); padding:12px; display:grid; gap:10px; min-width:0 }
+.licence .cwtag { color:var(--green) }
+.licence pre { border:1px solid var(--line); max-height:420px }
+.licence ol.steps { font-size:14.5px }
+.brief .pblock pre { max-height:none }
+@media (max-width:700px) { .groups { grid-template-columns:minmax(0,1fr) } }
 details.docs { border-style:solid; border-color:var(--line); display:grid; gap:10px }
 details.docs[open] > summary { margin-bottom:10px } details.docs .pblock + .pblock { margin-top:10px }
 @media (max-width:860px) { ol.stages { grid-template-columns:minmax(0,1fr) } }
@@ -138,7 +155,7 @@ details.docs[open] > summary { margin-bottom:10px } details.docs .pblock + .pblo
 <span class="tname">NotebookLM</span><span class="tuse">Cited Q&amp;A over your own documents</span><span class="tacc">Free with a Google account</span></a><a class="tool" href="https://app.powerbi.com" target="_blank" rel="noopener">
 <span class="tname">Power BI</span><span class="tuse">Dashboards; Copilot in Power BI</span><span class="tacc">Power BI licence; Copilot needs paid capacity</span></a><a class="tool" href="https://make.powerautomate.com" target="_blank" rel="noopener">
 <span class="tname">Power Automate</span><span class="tuse">Workflows, approvals, AI Builder extraction</span><span class="tacc">Included in many M365 plans; AI Builder is extra</span></a></div></section>
-  <section><h2 class="sechead">Jump to a demo</h2><nav class="demos"><a href="#demo1"><b>1</b> AI Financial Analyst</a><a href="#demo2"><b>2</b> AI-Assisted Valuation</a><a href="#demo3"><b>3</b> Investment Memorandum Generator</a><a href="#upload-guide" class="guidelink"><b>!</b> Where can I upload?</a><a href="#demo4"><b>4</b> Stress-Test a Project Model</a><a href="#demo5"><b>5</b> Due Diligence Across Documents</a><a href="#demo6"><b>6</b> Options to Investor Deck</a><a href="#demo7"><b>7</b> Monday Markets Update</a><a href="#demo8"><b>8</b> Pipeline Meeting with Copilot</a></nav></section>
+  <section><h2 class="sechead">Jump to a demo</h2><nav class="demos"><a href="#demo1"><b>1</b> AI Financial Analyst</a><a href="#demo2"><b>2</b> AI-Assisted Valuation</a><a href="#demo3"><b>3</b> Investment Memorandum Generator</a><a href="#upload-guide" class="guidelink"><b>!</b> Where can I upload?</a><a href="#access" class="guidelink"><b>?</b> Which group am I?</a><a href="#demo4"><b>4</b> Stress-Test a Project Model</a><a href="#demo5"><b>5</b> Due Diligence Across Documents</a><a href="#demo6"><b>6</b> Options to Investor Deck</a><a href="#demo7"><b>7</b> Monday Markets Update</a><a href="#demo8"><b>8</b> Pipeline Meeting with Copilot</a><a href="#brief" class="guidelink"><b>✎</b> Write a Cowork brief</a></nav></section>
   <section class="demo" id="demo1">
   <header class="dhead">
     <div class="dnum">Demo 1</div>
@@ -269,7 +286,7 @@ CHECKS: Use only the facts above. Where you make a judgement or need data we hav
   <section class="part" id="part2">
     <div class="eyebrow">Part 2 · Demos 4 to 8 · Hands-on</div>
     <h2>Copilot Chat and Copilot Cowork, for real work</h2>
-    <p>From here on you work in your own NICO Microsoft 365 account: upload files, ask follow-up questions and create Word, Excel and PowerPoint files. Read the upload guide first. It tells you which documents can go into which tool, and when.</p>
+    <p>From here on you work in your own NICO Microsoft 365 account: upload files, ask follow-up questions and create Word, Excel and PowerPoint files. Read the upload guide first. It tells you which documents can go into which tool, and when. Then find your access group (A, B or C): every demo has steps for each group.</p>
   </section>
 
   <section class="guide" id="upload-guide">
@@ -321,7 +338,7 @@ CHECKS: Use only the facts above. Where you make a judgement or need data we hav
     <h3>Copilot Chat or Copilot Cowork?</h3>
     <div class="vs">
       <div><div class="vstag">Copilot Chat</div><p><b>You lead each step.</b> You ask, it answers, you follow up. You give it the content by pasting, uploading or using <b>/</b>. It replies in seconds.</p><p><b>Access:</b> included with NICO Microsoft 365 work accounts.</p><p><b>Best for:</b> analysis, drafting, and questions about files you choose.</p></div>
-      <div><div class="vstag gold">Copilot Cowork</div><p><b>You describe the result you want.</b> Cowork makes a plan and works across Outlook, Teams, Excel, Word and your files. It keeps running in the background and asks for your approval before it makes changes.</p><p><b>Access:</b> needs a Microsoft 365 Copilot licence, IT must switch it on (it is off by default), and use is billed in Copilot Credits. Open the Microsoft 365 Copilot app and switch to <i>Cowork</i>. If you can't see it, ask IT.</p><p><b>Best for:</b> multi-step jobs that produce several files, such as a pack, a deck or a tracker.</p></div>
+      <div><div class="vstag gold">Copilot Cowork</div><p><b>You describe the result you want.</b> Cowork makes a plan and works across Outlook, Teams, Excel, Word and your files. It keeps running in the background and asks for your approval before it makes changes.</p><p><b>Access:</b> needs a Microsoft 365 Copilot licence, IT must switch it on (it is off by default), and use is billed in Copilot Credits. Open the Microsoft 365 Copilot app and switch to <i>Cowork</i>. If it says <i>Request access</i>, see <a href="#access">Which group are you in?</a></p><p><b>Best for:</b> multi-step jobs that produce several files, such as a pack, a deck or a tracker.</p></div>
     </div>
     <div class="rules cw">
       <div class="rule"><b>Read the plan</b>Approve each step only after reading it. Reject any step that edits an original file instead of a copy.</div>
@@ -329,6 +346,48 @@ CHECKS: Use only the facts above. Where you make a judgement or need data we hav
       <div class="rule"><b>It sees what you see</b>Cowork works under your permissions. If a deal folder is shared too widely, Cowork can read it too.</div>
     </div>
     <p class="fine">Microsoft product details were checked on 17 November 2026. Microsoft 365 Copilot Chat is now called Microsoft Copilot Chat. Buttons move often, but the rules above still apply.</p>
+  </section>
+
+  <section class="guide" id="access">
+    <header class="dhead">
+      <div class="dnum">1 minute · Before Demo 4</div>
+      <h2>Which group are you in?</h2>
+    </header>
+    <p class="lead">NICO colleagues have different Copilot access. Find your group now. Every demo from here on has steps for all three groups, so nobody just watches.</p>
+    <div class="groups">
+      <div class="gA"><span class="gtag">Group A · Copilot Chat</span><p><b>How to tell:</b> m365copilot.com shows the green shield, but there is usually no <i>Work</i> and <i>Web</i> switch at the top of the chat, and no Copilot button inside desktop Excel or Word.</p><p><b>What you do:</b> the numbered steps and prompts on each demo card.</p></div>
+      <div class="gB"><span class="gtag">Group B · Copilot licence</span><p><b>How to tell:</b> you see a <i>Work</i> and <i>Web</i> switch, <i>Researcher</i> and <i>Analyst</i> appear in the agents list, and Copilot opens inside Excel, Word and PowerPoint. Cowork is missing or says <i>Request access</i>.</p><p><b>What you do:</b> the green <i>Copilot licence version</i> on each card. It covers most of what Cowork does.</p></div>
+      <div class="gC"><span class="gtag">Group C · Cowork switched on</span><p><b>How to tell:</b> you can switch the Microsoft 365 Copilot app to <i>Cowork</i>, and it opens without asking for access.</p><p><b>What you do:</b> the gold <i>Copilot Cowork version</i> on each card. Read and approve the plan at every step.</p></div>
+    </div>
+    <div class="datacheck"><b>Cowork says "Request access"?</b><span>Your licence is fine. Cowork is billed per use in Copilot Credits, and NICO's IT team has not yet switched that billing on for you. You can send the request, and IT approves it. Don't wait for it today: follow the Group B steps, which cover the same work, and keep the Cowork brief you write in Demo 8 for when access arrives.</span></div>
+    <details class="docs"><summary>For facilitators and NICO IT: switch Cowork on before the session</summary>
+      <ol class="steps">
+        <li><b>One week before:</b> confirm that everyone who should be in Group C has a Microsoft 365 Copilot licence.</li>
+        <li>In the Microsoft 365 admin centre, under <i>Copilot</i>, turn on usage-based billing (Copilot Credits) for Cowork for a pilot group of training users only, and set a spending limit. Microsoft has moved this setting more than once, so search the admin centre for "usage-based billing" or "Cowork".</li>
+        <li>Approve the Cowork access requests that are waiting, or set who is allowed to request access.</li>
+        <li><b>Two days before:</b> sign in as one participant and check that Cowork opens and shows a plan. If it doesn't, plan for everyone to be in Group B. The session still works.</li>
+        <li><b>After the training:</b> review the credits used and agree who keeps access.</li>
+      </ol>
+      <div class="pblock"><div class="pbar"><span class="plabel">Email to NICO IT</span><span class="pnote">Fill in the brackets, then send it yourself</span><button class="copy" type="button" data-target="itmail">Copy</button></div>
+      <pre id="itmail" tabindex="0">Subject: Copilot Cowork access for the AI Masterclass on [date]
+
+Hello [IT contact],
+
+[Number] colleagues attending the AI Masterclass on [date] have Microsoft 365 Copilot licences, but when they open Copilot Cowork it asks them to request access.
+
+Could you please, by [date, two days before the session]:
+1. Turn on usage-based billing (Copilot Credits) for Copilot Cowork for the users listed below only, with a spending limit you are comfortable with for the training.
+2. Approve any Cowork access requests from these users.
+3. Let me know when it is done, so we can test it with one account.
+
+The exercises use fictional training data only. After the session we will review the credits used and agree with you who keeps access.
+
+Users: [names and work emails]
+
+Thank you,
+[Name]</pre></div>
+      <p class="fine">Based on Microsoft Learn, "Copilot Cowork admin governance" and "Cowork access", checked 17 November 2026. Menu names vary between tenants.</p>
+    </details>
   </section>
 
   <section class="demo" id="demo4">
@@ -339,6 +398,7 @@ CHECKS: Use only the facts above. Where you make a judgement or need data we hav
   </header>
   <p class="goal">Upload the Chikwawa Solar IPP model, make Copilot read it back correctly, then stress it and turn the results into a lender-ready note.</p>
   <div class="datacheck"><b>Data check</b><span>This practice file is fictional. For a real client model, use only Copilot Chat on your work account with the green shield, and keep web search off while the project is unannounced. Never use a personal ChatGPT or Claude account.</span></div>
+  <div class="yourgroup"><b>Your group</b><span class="ya"><b>A</b> Steps and prompts below</span><span class="yb"><b>B</b> Prompt 1 here, then Agent Mode in Excel</span><span class="yc"><b>C</b> Cowork version</span></div>
   <div class="tools"><a class="tbtn primary" href="https://m365copilot.com" target="_blank" rel="noopener">Open Copilot Chat (work)</a><a class="tbtn" href="files/NICO_AI_Demo_Data_Pack.xlsx" download>⬇ Data pack (.xlsx)</a></div>
   <ol class="steps">
     <li>Download the data pack. If you can, save it to your OneDrive.</li>
@@ -377,7 +437,18 @@ Columns: Risk | What could happen | Allocated to | Mitigation instrument | Scena
   <pre id="p4d" tabindex="0">Recommend four structuring changes that would lift the minimum DSCR in the combined downside, for example debt sculpting, a debt service reserve account, a longer tenor, a partial risk guarantee or a concessional tranche. Label any new numbers as assumptions.
 
 Then write a 150-word investment committee summary. Turn the whole answer into a Word document I can download, titled "Chikwawa IPP - Stress test note - DRAFT".</pre></div>
-  <p class="hint">No Word file offered? Open the <b>Word</b> agent in the Copilot app and ask again, or copy the answer and paste it into Word. <b>Have a Microsoft 365 Copilot licence?</b> Open the data pack in Excel and change cell <b>B15</b> to 0.85. Then ask Copilot in Excel: <i>"Explain why the minimum DSCR changed and which cells drive it."</i> The answer should be 1.15x.</p>
+  <p class="hint">No Word file offered? Open the <b>Word</b> agent in the Copilot app and ask again, or copy the answer and paste it into Word.</p>
+  <div class="licence">
+    <div class="cwhead"><span class="cwtag">Copilot licence version · Group B</span><span class="pnote">Do Prompt 1 in Copilot Chat first, so you know the base case.</span><button class="copy" type="button" data-target="l4">Copy</button></div>
+    <p class="hint" style="color:inherit"><b>Let Copilot run the stress test inside the workbook itself.</b></p>
+    <ol class="steps"><li>Open the data pack from OneDrive in Excel (desktop or Excel for the web).</li><li>Open Copilot and choose <b>Agent Mode</b>. In some versions it is the <i>Excel</i> agent under <i>Tools</i>.</li><li>Paste the prompt below. Watch it add the sheet and the table, step by step.</li><li>Check the results against the scenario table in the sheet, then check the original sheet is unchanged.</li></ol>
+    <pre id="l4" tabindex="0">In this workbook, copy the sheet Demo4_ProjectFinance to a new sheet called Stress_Test. Work only in Stress_Test. Never change the original sheet.
+
+1. Re-run four cases by changing the blue inputs in Stress_Test: revenue -15% (B15 = 0.85), capex +20% (B16 = 1.20), interest rate +4 points (B7 = 22%), and all three together. Reset the inputs to the base case after each one.
+2. Below the model, build a results table: Case | Project IRR | Equity IRR | Minimum DSCR | Average DSCR | Pass or fail against a 1.25x lender minimum.
+3. Shade any minimum DSCR below 1.25x red, and explain in one line per case which input causes the failure.</pre>
+    <p class="hint"><b>Expected:</b> revenue -15% gives a minimum DSCR of 1.15x, and all three together give 0.83x. Agent Mode edits the file itself, so on a real model always start from a copy.</p>
+  </div>
   <div class="cowork">
     <div class="cwhead"><span class="cwtag">Copilot Cowork version</span><span class="pnote">If Cowork is switched on for you. Save the data pack to OneDrive first.</span><button class="copy" type="button" data-target="c4">Copy</button></div>
     <pre id="c4" tabindex="0">Using NICO_AI_Demo_Data_Pack.xlsx in my OneDrive (sheet Demo4_ProjectFinance, a fictional solar IPP), prepare a lender-ready stress test pack:
@@ -401,6 +472,7 @@ Show me your plan first and wait for my approval. Do not email or share anything
   </header>
   <p class="goal">Upload three Kalulu documents at once and make Copilot find the contradictions, quoting the sentence that proves each one.</p>
   <div class="datacheck"><b>Data check</b><span>Data room documents are client confidential and usually covered by an NDA. Use Copilot Chat on your work account with the green shield, or Cowork on the deal's SharePoint site. Never upload a data room to NotebookLM, ChatGPT or Claude on a personal account.</span></div>
+  <div class="yourgroup"><b>Your group</b><span class="ya"><b>A</b> Steps and prompts below</span><span class="yb"><b>B</b> Start Researcher, then do Prompt 1 while it works</span><span class="yc"><b>C</b> Cowork version</span></div>
   <div class="tools"><a class="tbtn primary" href="https://m365copilot.com" target="_blank" rel="noopener">Open Copilot Chat (work)</a><a class="tbtn" href="files/Kalulu_DD1_Management_Presentation.txt" download>⬇ DD1 Presentation</a><a class="tbtn" href="files/Kalulu_DD2_Audited_Accounts_Notes.txt" download>⬇ DD2 Audited notes</a><a class="tbtn" href="files/Kalulu_DD3_Board_Minutes.txt" download>⬇ DD3 Board minutes</a></div>
   <ol class="steps">
     <li>Download the three Kalulu files.</li>
@@ -478,6 +550,18 @@ Item 6 Banking: The Finance Director advised that the lender has been informed i
 Item 7 Procurement: The board approved continued purchases from Mapira Farms Ltd without a competitive tender, given reliability of supply.
 </pre></div>
   </details>
+  <div class="licence">
+    <div class="cwhead"><span class="cwtag">Copilot licence version · Group B</span><span class="pnote">Uses one Researcher run. Put the three files in a OneDrive folder first.</span><button class="copy" type="button" data-target="r5">Copy</button></div>
+    <p class="hint" style="color:inherit"><b>Give the whole review to Researcher, then compare its answer with Copilot Chat's.</b></p>
+    <ol class="steps"><li>Save the three files to a OneDrive folder called <i>Kalulu DD - data room</i>.</li><li>In the Microsoft 365 Copilot app, open <b>Researcher</b> from the agents list. If it offers a choice of sources, choose your work files only.</li><li>Paste the prompt below. Researcher may ask a clarifying question and shows its plan, much like Cowork. Answer it and let it run.</li><li>While it works (a few minutes), run Prompt 1 in Copilot Chat. When Researcher finishes, compare the two registers: which found more of the six planted issues?</li></ol>
+    <pre id="r5" tabindex="0">Using only the three files in my OneDrive folder "Kalulu DD - data room" (a fictional company), act as a due diligence analyst for a prospective investor. Do not search the web.
+
+1. Find every place where the management presentation contradicts the audited accounts notes or the board minutes.
+2. Put them in a findings table: Finding | What each document says | Exact source sentence | Potential MWK impact | Suggested severity.
+3. Recalculate interest cover if half of the MWK 900m overdue receivable is impaired, and show the arithmetic.
+4. End with ten prioritised questions for management.</pre>
+    <p class="hint">Researcher and Analyst runs are limited each month, so save them for work that needs them. Then ask Researcher: <i>"Turn the findings table into a Word document."</i></p>
+  </div>
   <div class="cowork">
     <div class="cwhead"><span class="cwtag">Copilot Cowork version</span><span class="pnote">First put the three files in a OneDrive folder called "Kalulu DD - data room".</span><button class="copy" type="button" data-target="c5">Copy</button></div>
     <pre id="c5" tabindex="0">Using the three documents in my OneDrive folder "Kalulu DD - data room" (fictional company), run a first-pass due diligence review:
@@ -502,6 +586,7 @@ Save the files in the same folder. Show me your plan first and wait for my appro
   </header>
   <p class="goal">Compare three ways to raise MWK 6bn, test what the bond does to interest cover, then have Copilot build a draft investor deck you can open in PowerPoint.</p>
   <div class="datacheck"><b>Data check</b><span>Client financials and draft terms are confidential. Use Copilot Chat on your work account only. Anything investor-facing needs Compliance review and must say "indicative, subject to market testing" on every page.</span></div>
+  <div class="yourgroup"><b>Your group</b><span class="ya"><b>A</b> Steps and prompts below</span><span class="yb"><b>B</b> Prompts 1 and 2 here, then the PowerPoint agent</span><span class="yc"><b>C</b> Cowork version</span></div>
   <div class="tools"><a class="tbtn primary" href="https://m365copilot.com" target="_blank" rel="noopener">Open Copilot Chat (work)</a><a class="tbtn" href="files/NICO_AI_Demo_Data_Pack.xlsx" download>⬇ Data pack (.xlsx)</a></div>
   <ol class="steps">
     <li>Start a new Copilot Chat. Check the shield. Prompt 1 already contains the data, so you don't need to upload anything.</li>
@@ -539,6 +624,19 @@ Put the one key message of each slide in its title. Add "Indicative - subject to
   <div class="pbar"><span class="plabel">Follow-up 4 · Prepare for investor questions</span>
   <button class="copy" type="button" data-target="p6d">Copy</button></div>
   <pre id="p6d" tabindex="0">Write a 120-word investor narrative. Then list the five toughest questions a pension fund investment committee would ask about this issue, each with a short suggested answer that uses only facts from this chat.</pre></div>
+  <div class="licence">
+    <div class="cwhead"><span class="cwtag">Copilot licence version · Group B</span><span class="pnote">Run Prompt 1 and follow-up 2 in Copilot Chat first.</span><button class="copy" type="button" data-target="l6">Copy</button></div>
+    <p class="hint" style="color:inherit"><b>Build the deck in PowerPoint itself, from your own analysis.</b></p>
+    <ol class="steps"><li>Copy Copilot Chat's answer to Prompt 1 (the comparison and recommendation).</li><li>Open the <b>PowerPoint</b> agent in the Microsoft 365 Copilot app, or open PowerPoint and choose <b>Agent Mode</b> in the Copilot pane.</li><li>Paste the prompt below, then paste Copilot Chat's answer underneath it.</li><li>Open the deck and check slide 10: every number must trace back to the chat or the workbook.</li></ol>
+    <pre id="l6" tabindex="0">Create a 10-slide investor presentation for a fictional MWK 6bn raise by Kalulu Agro-Processing Ltd. Use only the funding comparison pasted below and, if you can open it, /NICO_AI_Demo_Data_Pack.xlsx (sheets Demo6_FundingOptions and Demo1_Financials).
+
+Slides: 1 Title, 2 Investment highlights, 3 Company overview, 4 Financial performance FY2023-FY2025 (table), 5 Use of proceeds, 6 The new processing line, 7 Key terms of the recommended option, 8 Credit strengths and risks, 9 Development impact, 10 Numbers used, with the source of each.
+
+Put "Indicative - FICTIONAL TRAINING CASE" on every slide. Do not invent market rates or investor names. Add speaker notes to every slide.
+
+[Paste Copilot Chat's comparison and recommendation here]</pre>
+    <p class="hint">Then, in PowerPoint, ask Copilot: <i>"Which slides make claims that are not supported by slide 10?"</i></p>
+  </div>
   <div class="cowork">
     <div class="cwhead"><span class="cwtag">Copilot Cowork version</span><span class="pnote">Save the data pack to OneDrive first.</span><button class="copy" type="button" data-target="c6">Copy</button></div>
     <pre id="c6" tabindex="0">Prepare a capital-raising pack for the fictional Kalulu MWK 6bn raise, using sheets Demo6_FundingOptions and Demo1_Financials in NICO_AI_Demo_Data_Pack.xlsx in my OneDrive:
@@ -562,6 +660,7 @@ Show me your plan first and wait for my approval.</pre>
   </header>
   <p class="goal">This is the one demo where web search should be <b>on</b>. Gather the week's figures with sources and dates, then draft the update NICO's service charter promises every Monday.</p>
   <div class="datacheck"><b>Data check</b><span>This demo uses public data, so web search on is correct. The rule: never put client or deal information into a chat with web search on. Keep research chats and deal chats separate.</span></div>
+  <div class="yourgroup"><b>Your group</b><span class="ya"><b>A</b> Steps and prompts below</span><span class="yb"><b>B</b> Researcher with web sources</span><span class="yc"><b>C</b> Cowork version</span></div>
   <div class="tools"><a class="tbtn primary" href="https://m365copilot.com" target="_blank" rel="noopener">Open Copilot Chat (work)</a><a class="tbtn" href="https://www.rbm.mw" target="_blank" rel="noopener">RBM</a><a class="tbtn" href="https://nsomalawi.mw" target="_blank" rel="noopener">NSO</a><a class="tbtn" href="https://mse.co.mw" target="_blank" rel="noopener">MSE</a></div>
   <ol class="steps">
     <li>Start a <b>new chat</b>, check the shield, and turn <b>web search on</b>.</li>
@@ -602,6 +701,19 @@ MSE weekly turnover (MWK m) | 1,840 | 2,615</pre></div>
   <div class="pbar"><span class="plabel">Follow-up 3 · Word file with sign-off</span>
   <button class="copy" type="button" data-target="p7c">Copy</button></div>
   <pre id="p7c" tabindex="0">Turn the update into a Word document I can download. Use clear headings and the summary table, and put "DRAFT - PRACTICE DATA" in the header. At the end add a "Sources and sign-off" box with blank lines for Analyst name, Reviewer name and Date.</pre></div>
+  <div class="licence">
+    <div class="cwhead"><span class="cwtag">Copilot licence version · Group B</span><span class="pnote">Public data only, so web sources are correct here.</span><button class="copy" type="button" data-target="r7">Copy</button></div>
+    <p class="hint" style="color:inherit"><b>Let Researcher gather and cite this week's figures.</b></p>
+    <ol class="steps"><li>Open <b>Researcher</b>. If it offers a choice of sources, choose the web only, not your work files.</li><li>Paste the prompt below and let it run.</li><li>Open at least two source links and check the figure and its date.</li><li>Then run Prompt 2 and follow-up 3 in Copilot Chat to practise the drafting with the illustrative data.</li></ol>
+    <pre id="r7" tabindex="0">Research the Malawi financial markets for this week's Weekly Financial Markets Update. Use rbm.mw, nsomalawi.mw and mse.co.mw first.
+
+1. Find the latest RBM policy rate, 91-day and 364-day Treasury bill yields, NSO headline inflation, the official MWK/USD rate, and the MSE MASI and weekly turnover. For each, give the value, the date and the source link.
+2. Flag any figure that is more than 30 days old or that you could not confirm on an official site.
+3. Draft a 350-word update with the sections Headline, Money markets, Inflation, Foreign exchange, Equities and What to watch.
+
+Do not use any information from my emails, chats or files.</pre>
+    <p class="hint"><b>Every Monday?</b> If your Copilot app offers <i>Schedule this prompt</i> on a prompt you have sent, schedule this one for Monday at 7:00. An analyst still checks and signs off every figure.</p>
+  </div>
   <div class="cowork">
     <div class="cwhead"><span class="cwtag">Copilot Cowork version</span><span class="pnote">Cowork's own web browsing may need the Frontier programme. If it can't browse, do Prompt 1 in Copilot Chat and give Cowork the table.</span><button class="copy" type="button" data-target="c7">Copy</button></div>
     <pre id="c7" tabindex="0">Prepare this week's Weekly Financial Markets Update draft:
@@ -625,6 +737,8 @@ Flag any figure you could not verify. Show me your plan first.</pre>
   </header>
   <p class="goal">Upload the deal register, weight the fees by probability, and prepare each officer's actions. Then see how Cowork puts the whole Monday pack together.</p>
   <div class="datacheck"><b>Data check</b><span>A real deal register is among NICO's most sensitive commercial files, with client names, fees and stages. Use Copilot Chat on your work account or Cowork only. Keep the register in a SharePoint site that only the deal team can open, because Cowork can read anything you can read.</span></div>
+  <div class="yourgroup"><b>Your group</b><span class="ya"><b>A</b> Steps and prompts below</span><span class="yb"><b>B</b> Analyst, then the Work tab</span><span class="yc"><b>C</b> Cowork version</span></div>
+  <p class="hint"><b>Timing:</b> 6 minutes on the analysis, then 3 minutes for everyone to <a href="#brief">write a Cowork brief</a>.</p>
   <div class="tools"><a class="tbtn primary" href="https://m365copilot.com" target="_blank" rel="noopener">Open Copilot Chat (work)</a><a class="tbtn" href="files/NICO_Deal_Register_FICTIONAL.csv" download>⬇ Deal register (.csv)</a><a class="tbtn" href="https://make.powerautomate.com" target="_blank" rel="noopener">Power Automate</a></div>
   <ol class="steps">
     <li>Download the deal register CSV, or use the Demo8_Pipeline sheet in the data pack.</li>
@@ -654,6 +768,20 @@ FORMAT: Tables.</pre></div>
 - an action list for this week (no more than five bullets) covering only their own deals
 - a short, friendly Teams message I can paste to them. Do not mention other officers' deals or fees.</pre></div>
   <p class="hint"><b>Want automation as well?</b> Ask: <i>"Design a Power Automate flow: when a proposal arrives by email, extract client, sector, value and deadline, add a row to this register and notify the lead officer in Teams. List the trigger and each action."</i> Then paste it into <b>Power Automate › Describe it to design it</b>. Test it with dummy emails only.</p>
+  <div class="licence">
+    <div class="cwhead"><span class="cwtag">Copilot licence version · Group B</span><span class="pnote">Uses one Analyst run. Web search off.</span><button class="copy" type="button" data-target="a8">Copy</button></div>
+    <p class="hint" style="color:inherit"><b>Analyst crunches the register; the Work tab does Cowork's "last contact" check.</b></p>
+    <ol class="steps"><li>Open <b>Analyst</b> from the agents list and attach the deal register CSV.</li><li>Paste the prompt below. Analyst writes and runs code, and you can open it to see how each number was worked out.</li><li>Check the totals: 12 deals, MWK 149,000m of value and MWK 2,405m of fees.</li><li>Then, in Copilot Chat, switch to <b>Work</b> and paste the second prompt. It searches your own Outlook and Teams, which is the step Cowork automates. Keep it on your own screen; don't project it.</li></ol>
+    <pre id="a8" tabindex="0">Analyse the attached NICO_Deal_Register_FICTIONAL.csv and show the code you run.
+
+1. Totals: number of deals, total value and total expected fees.
+2. A probability-weighted fee forecast using: New lead 10%, Proposal submitted 25%, Mandate secured 50%, other Active stages 70%, Active - financial close 85%, Closed - won 100%.
+3. Fee concentration by lead officer, sector and completion risk, with a chart.
+4. A downloadable Excel file with the results.</pre>
+    <div class="pblock"><div class="pbar"><span class="plabel">Second prompt · Work tab</span><span class="pnote">Your own mailbox: keep it on your screen</span><button class="copy" type="button" data-target="w8">Copy</button></div>
+    <pre id="w8" tabindex="0">Search my Outlook email and Teams chats from the last 14 days. List the five client matters I have discussed most, with the people involved, the date of our last contact and one line on where it stands. Flag any matter where someone is waiting for a reply from me.</pre></div>
+    <p class="hint">The fictional deals won't appear in your mail. That's expected. On a real register, the Work tab check is where most of the time is saved.</p>
+  </div>
   <div class="cowork">
     <div class="cwhead"><span class="cwtag">Copilot Cowork version · the showcase</span><span class="pnote">Save the CSV to OneDrive first. It will find no emails about fictional deals; that is expected.</span><button class="copy" type="button" data-target="c8">Copy</button></div>
     <pre id="c8" tabindex="0">Prepare Monday's pipeline meeting pack from NICO_Deal_Register_FICTIONAL.csv in my OneDrive:
@@ -673,6 +801,48 @@ Show me the plan first, and stop for my approval before any step that changes my
   </div>
 </section>
 
+  <section class="guide brief" id="brief">
+    <header class="dhead">
+      <div class="dnum">3 minutes · All groups · End of Demo 8</div>
+      <h2>Write a Cowork brief</h2>
+    </header>
+    <p class="lead">Cowork is only as good as the brief you give it. Writing one is the skill that matters, and you can practise it today whatever your group. Pick a real task you repeat every week or month, and fill in the six lines.</p>
+    <div class="pblock"><div class="pbar"><span class="plabel">Brief template</span><span class="pnote">Replace each bracket. The examples are from Demo 8.</span><button class="copy" type="button" data-target="brieft">Copy</button></div>
+    <pre id="brieft" tabindex="0">GOAL: [The finished result in one sentence. Example: Monday's pipeline meeting pack, ready for my review by 8:00.]
+
+SOURCES: [Exactly which files, folders, sites and mailboxes it may use. Example: the deal register in the Pipeline SharePoint site, and my Outlook and Teams from the last 14 days.]
+
+OUTPUTS: [Each file or draft, its format and where to save it. Example: an Excel summary and a one-page Word brief in OneDrive, folder "Pipeline - DRAFT".]
+
+CHECKPOINTS: Show me your plan first and wait for my approval. Stop and ask before you send, share, book, delete or change anything.
+
+NEVER: [What it must not do. Example: never edit the original register, never message anyone outside NICO, never put one officer's fees in another officer's message.]
+
+DONE WHEN: [How you will check it. Example: the totals match the register: 12 deals, MWK 149,000m of value, MWK 2,405m of fees.]</pre></div>
+    <div class="groups">
+      <div class="gA"><span class="gtag">Group A · run it in Chat</span><p>Paste your brief into Copilot Chat, then add: <i>"Don't do the work yet. Turn this brief into a numbered plan, tell me which sources you can't open, then do step 1 only."</i></p><p>Approve each step yourself. You are playing the part of Cowork's approval checkpoint.</p></div>
+      <div class="gB"><span class="gtag">Group B · run it with your tools</span><p>Do the same in Copilot Chat on the <i>Work</i> tab, so it can reach your email, chats and files. Hand the analysis steps to <i>Analyst</i>, and the document steps to the Word, Excel or PowerPoint agent.</p></div>
+      <div class="gC"><span class="gtag">Group C · run it in Cowork</span><p>Paste the brief into Cowork. Before you approve, compare its plan with your brief line by line. Did it ask before every send or change?</p></div>
+    </div>
+    <p class="hint"><b>Keep your brief.</b> Save it in Word or OneNote. When IT switches Cowork on for you, paste it in unchanged. Check the upload guide first: the sources you name must be allowed for that kind of information.</p>
+    <details class="docs"><summary>Take it further after the session: build your own agent (10 minutes)</summary>
+      <ol class="steps">
+        <li>In the Microsoft 365 Copilot app, open <b>Agents › Create agent</b> (Agent Builder).</li>
+        <li>Name it <i>NICO DD Reviewer</i> and paste the instructions below.</li>
+        <li>Group B: add the deal's SharePoint folder as knowledge. Group A may not be able to add SharePoint knowledge; attach the files in each chat instead.</li>
+        <li>Test it with the three Kalulu files from Demo 5. It should find the same issues and quote its sources.</li>
+        <li>Share it only with your deal team. The agent can only read what each user can already read.</li>
+      </ol>
+      <div class="pblock"><div class="pbar"><span class="plabel">Agent instructions</span><button class="copy" type="button" data-target="agent">Copy</button></div>
+      <pre id="agent" tabindex="0">You are NICO Capital's due diligence reviewer.
+- Compare the documents you are given and list every inconsistency in a table: Finding | What each document says | Exact source sentence | File name | Suggested severity.
+- Quote sources exactly. If you cannot find a source sentence, write "not found". Never guess.
+- Show the arithmetic for every number you calculate.
+- Never draft messages to clients or counterparties unless asked, and never send anything.
+- If the user mentions an unannounced or price-sensitive deal, remind them to keep web search off and to use the deal codename.
+- End every answer with: "Draft for review. A NICO analyst decides severity and signs off."</pre></div>
+    </details>
+  </section>
   <section class="sources"><h2 class="sechead">Live Malawi data sources</h2><ul><li><a href="https://www.rbm.mw" target="_blank" rel="noopener">Reserve Bank of Malawi</a> <span>Policy rate, T-bill yields, exchange rates</span></li><li><a href="https://nsomalawi.mw" target="_blank" rel="noopener">National Statistical Office</a> <span>CPI and inflation releases</span></li><li><a href="https://mse.co.mw" target="_blank" rel="noopener">Malawi Stock Exchange</a> <span>Daily trading, MASI, listed company reports</span></li><li><a href="https://nicocapitalmw.com/customer-service-charter/" target="_blank" rel="noopener">NICO Capital Service Charter</a> <span>Weekly markets update (Mondays) and monthly economic report (20th)</span></li></ul></section>
 </div></main>
 <footer><div class="wrap"><i>Think Training. Think Sycamore.</i><span>info@sycamoreconsultltd.com · www.sycamoreconsultltd.com · +265 888 123 450</span></div></footer>
