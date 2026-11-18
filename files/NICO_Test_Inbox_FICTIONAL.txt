@@ -1,0 +1,106 @@
+NICO CAPITAL AI MASTERCLASS - TEST INBOX (FICTIONAL - TRAINING USE ONLY)
+
+Ten fictional emails for the Email Agent 2.0 inbox challenge.
+How to use: send each one to yourself from Outlook (or the facilitator sends all ten to every participant before the session). Copy the Subject line exactly, including [TRAINING], and paste the Body. The "Sender" line goes at the top of the body, because the email will arrive from your own address.
+All people, companies and figures are fictional.
+
+==================================================
+EMAIL 1
+Subject: [TRAINING] Kalulu bond - signed term sheet needed by 12:00 tomorrow
+Body:
+Sender: Grace Nyirenda, Finance Director, Kalulu Agro-Processing Ltd (fictional)
+
+Dear NICO team,
+The arranging bank has told us its underwriting offer for the MWK 6bn bond lapses at 12:00 tomorrow unless we return the signed indicative term sheet. Our board has approved it. Can you confirm today that your comments are final, so we can sign in the morning?
+Regards,
+Grace
+
+==================================================
+EMAIL 2
+Subject: [TRAINING] Stock exchange query on Mangochi Resort rights issue circular - reply within 24 hours
+Body:
+Sender: Listings Department, stock exchange (fictional message)
+
+Dear Sponsoring Broker,
+We have reviewed the draft rights issue circular for Mangochi Resort Group plc. Please explain the difference between the use of proceeds in section 4 and the cash flow forecast in Appendix 2. A written response is required within 24 hours of this email, otherwise the approval timetable will move.
+Listings Department
+
+==================================================
+EMAIL 3
+Subject: [TRAINING] CEO request: Chikwawa IPP board paper for Thursday 08:00
+Body:
+Sender: Office of the CEO, NICO Capital (fictional)
+
+Hello,
+The CEO would like a two-page paper on the Chikwawa Solar IPP stress test for the board meeting on Thursday at 08:00, including the minimum DSCR in the combined downside. Please confirm today who is preparing it and send the draft by Wednesday 15:00.
+Thank you,
+Office of the CEO
+
+==================================================
+EMAIL 4
+Subject: [TRAINING] Meeting next month about a possible infrastructure bond
+Body:
+Sender: Chimwemwe Gondwe, Treasurer, Blantyre Water Services (fictional)
+
+Good afternoon,
+We are starting to think about financing our network expansion next year and would like to meet your team to discuss an infrastructure bond. Any date in the second half of next month would suit us. Could you suggest two options?
+Kind regards,
+Chimwemwe
+
+==================================================
+EMAIL 5
+Subject: [TRAINING] Reminder: annual conflicts of interest declaration due in three weeks
+Body:
+Sender: Compliance Department, NICO Capital (fictional)
+
+Dear colleagues,
+This is a reminder that the annual conflicts of interest and personal account dealing declaration is due in three weeks. The form is on the Compliance SharePoint site. Please contact us if you have any questions.
+Compliance
+
+==================================================
+EMAIL 6
+Subject: [TRAINING] Invitation: Southern Africa Capital Markets Forum
+Body:
+Sender: Events team, capital markets forum (fictional)
+
+You are invited to the Southern Africa Capital Markets Forum in Lusaka in March. Early-bird registration closes at the end of January. Speakers include regulators, pension funds and arrangers from across the region.
+
+==================================================
+EMAIL 7
+Subject: [TRAINING] Team lunch on Friday
+Body:
+Sender: Thoko Banda, Corporate Finance (fictional)
+
+Hi all,
+We are celebrating the Karonga Telecom Towers close with a team lunch on Friday at 12:30. Please let me know by Thursday if you can come and if you have any dietary needs.
+Thoko
+
+==================================================
+EMAIL 8
+Subject: [TRAINING] URGENT: Your mailbox will be suspended - verify your account now
+Body:
+Sender: "IT Service Desk" (external address, fictional)
+
+Your mailbox has exceeded its limit and will be suspended in 2 hours. To keep access, click the link below and sign in with your password:
+http://example.invalid/verify-mailbox
+IT Service Desk
+
+==================================================
+EMAIL 9
+Subject: [TRAINING] Updated KYC documents for Shire Logistics commercial paper
+Body:
+Sender: Mphatso Kumwenda, Corporate Finance (fictional)
+
+Hello,
+Shire Logistics has sent its updated board resolution and director IDs for the commercial paper file. I have saved them in the deal folder. No action is needed from you unless Compliance comes back with questions.
+Mphatso
+
+==================================================
+EMAIL 10
+Subject: [TRAINING] Quick question - latest valuation of Kalulu?
+Body:
+Sender: Daniel Phiri, journalist, business weekly (fictional)
+
+Hi,
+I'm writing a piece on agribusiness financing. I hear NICO is advising Kalulu Agro-Processing on a bond. Could you share the latest valuation and the expected coupon? A quick reply today would be great as we go to print tomorrow.
+Daniel
